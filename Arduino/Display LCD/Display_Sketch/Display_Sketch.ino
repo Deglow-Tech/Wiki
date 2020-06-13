@@ -14,7 +14,7 @@ void loop() {
   lcd.setCursor(0, 0);
   lcd.print("Dont press");
   lcd.setCursor(0, 1);
-  lcd.print("the boton");
+  lcd.print("the button");
   delay(1000);
   lcd.clear();
   delay(1000);
