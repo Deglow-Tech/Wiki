@@ -1,4 +1,4 @@
-# Wiki de Deglow 
+# Wiki Deglow 
 
 _En esta seccion se encontraran codigos unitarios de funcionalidades relevantes o de valor para los sistemas principales_
 
