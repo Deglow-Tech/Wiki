@@ -91,7 +91,7 @@ public class Analisis {
 		
 		if (CANT_MEDICIONES == CANT_PULSACIONES_MAX &&
 				(CANT_PULSACIONES_SOBRE_MAX_GRAVE + CANT_PULSACIONES_SOBRE_MAX_MODERADO) > PORCENTAJE_PULSACIONES_MAX) {
-			String print = ((CANT_PULSACIONES_SOBRE_MAX_MODERADO) > PORCENTAJE_PULSACIONES_MAX) ?
+			String print = ((CANT_PULSACIONES_SOBRE_MAX_GRAVE) > PORCENTAJE_PULSACIONES_MAX) ?
 					"Alerta urgente (MAYOR A 180LPM): Envio de mail + mensaje de texto + notificacion en perfil medico web\n" :
 						"Alerta moderada (ENTRE 160LPM Y 180LPM): Envio mail + notificacion en perfil medico web\n";
 			System.out.println(print);
@@ -100,7 +100,7 @@ public class Analisis {
 		}
 		if (CANT_MEDICIONES == CANT_PULSACIONES_MIN) {
 			if ((CANT_PULSACIONES_SOBRE_MIN_GRAVE + CANT_PULSACIONES_SOBRE_MIN_MODERADO) > PORCENTAJE_PULSACIONES_MIN) {
-				String print = ((CANT_PULSACIONES_SOBRE_MIN_MODERADO) > PORCENTAJE_PULSACIONES_MIN) ?
+				String print = ((CANT_PULSACIONES_SOBRE_MIN_GRAVE) > PORCENTAJE_PULSACIONES_MIN) ?
 						"Alerta urgente (MENOR A 100LPM): Envio de mail + mensaje de texto + notificacion en perfil medico web\n" :
 							"Alerta moderada (ENTRE 100LPM Y 120LPM): Envio mail + notificacion en perfil medico web\n";
 				System.out.println(print);
